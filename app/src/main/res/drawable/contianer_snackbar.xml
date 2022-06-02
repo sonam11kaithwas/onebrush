@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    Set Margin Here -->
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+
+        <!-- Insert your shape here: -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/BrickRed" />
+
+            <!-- Padding for inner text-->
+            <padding
+                android:bottom="10dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="10dp" />
+
+
+        </shape>
+        <bitmap android:src="@drawable/snackbar_img"  />
+
+
+    </item>
+
+
+</layer-list>

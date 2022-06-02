@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="dendines"
+            type="com.advantal.onebrush.dentis_dash__board_pkg.denti_wcl_scr_pkg.DentiWclScrViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_color"
+        tools:context=".dentis_dash__board_pkg.denti_wcl_scr_pkg.DentiWclScrActivity">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/logo" />
+
+
+        <ImageView
+            android:id="@+id/cross_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:onClick="viewClickEvent"
+            android:src="@drawable/cross_ic"
+            android:visibility="gone" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view"
+            android:layout_below="@+id/logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_above="@+id/bio_nxt_btn"
+            android:visibility="gone" />
+
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/dot_layout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="@dimen/_80sdp"-->
+        <!--        android:layout_alignParentLeft="true"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_above="@+id/bio_nxt_btn"-->
+        <!--        android:layout_marginTop="@dimen/_10sdp"-->
+        <!--        android:gravity="center"-->
+        <!--        android:orientation="horizontal" />-->
+
+
+        <!--    <androidx.appcompat.widget.AppCompatButton-->
+        <!--        android:id="@+id/bio_nxt_btn"-->
+        <!--        style="@style/welcome_button"-->
+        <!--        android:layout_alignParentBottom="true"-->
+        <!--        android:layout_marginTop="@dimen/_20sdp"-->
+        <!--        android:layout_marginBottom="@dimen/_10sdp"-->
+        <!--        android:background="@drawable/next_button_shape"-->
+        <!--        android:onClick="viewClickEvent"-->
+        <!--        android:text="@string/next" />-->
+
+
+        <LinearLayout
+            android:id="@+id/dot_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bio_nxt_btn"
+            style="@style/LoginButtonStyle"
+            android:layout_above="@+id/dot_layout"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/next_button_shape"
+            android:onClick="viewClickEvent"
+            android:text="@string/next"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+</layout>

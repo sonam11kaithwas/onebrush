@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_40sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:gravity="center"
+    tools:context=".denti_qus_pkg.CustomProgressActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/CircularDeterminateProgressBar"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            tools:progress="1">
+
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/progress_stroke" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

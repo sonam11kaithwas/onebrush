@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="newCaseModel"
+            type="com.advantal.onebrush.dentis_dash__board_pkg.dentinostic_pkg.newcase_pkg.newcase_viewmodel_pkg.NewCaseViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".dentis_dash__board_pkg.dentinostic_pkg.newcase_pkg.NewCaseActivity">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/back_button"
+            android:onClick="onClickEvent" />
+
+        <ImageView
+            android:id="@+id/one_brush_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickEvent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/cross_ic" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_cross"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/text_black_color"
+                android:src="@drawable/group_8594" />
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/text_black_color"
+                android:foregroundGravity="center"
+                android:src="@drawable/group_8655" />
+
+            <ImageView
+
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:backgroundTint="@color/text_black_color"
+                android:src="@drawable/group_8595" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlayout_img"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dentinostic_header"
+                style="@style/login_header"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/welcome_to_our_diagnostic_dialog" />
+
+            <TextView
+                android:id="@+id/dentinostic_sub_header"
+                style="@style/login_sub_header"
+                android:text="@string/we_will_guide_you_through" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_start"
+            style="@style/LoginButtonStyle"
+            android:layout_above="@id/tv_cencle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/next_button_shape"
+            android:onClick="onClickEvent"
+            android:text="@string/start" />
+
+        <TextView
+            android:id="@+id/tv_cencle"
+            style="@style/bottom_textview"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:onClick="onClickEvent"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+</layout>

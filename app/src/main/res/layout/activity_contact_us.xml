@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dentis_dash__board_pkg.dentis_case_information.denti_case_pkg.ContactUsActivity">
+
+    <ImageView
+        android:id="@+id/back_btn_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:onClick="onClickHandler"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/one_brush_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/iv_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/cross_ic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+
+        android:layout_alignParentBottom="true">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_25sdp"
+        android:text="Input"
+        android:textColor="@color/navy"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/custom_edittext"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

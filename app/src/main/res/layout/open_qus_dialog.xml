@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tv_one_brush"
+        style="@style/login_header"
+        android:text="@string/onebrush" />
+
+    <TextView
+        android:id="@+id/tv_text_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/midnight"
+        android:layout_below="@id/tv_one_brush"
+        android:text="@string/are_you_want_to_save_data" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_text_data"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="#c0c0c0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1">
+
+        <TextView
+            android:id="@+id/tv_no"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="left"
+            android:text="@string/no"
+            android:textColor="@color/royal"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            style="@style/Divider.Vertical"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/tv_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/yes"
+            android:textColor="@color/royal"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

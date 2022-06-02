@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="16"
+            android:useLevel="false">
+            <solid android:color="@color/Evergreen" />
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="360"
+            android:toDegrees="360">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="20"
+                android:useLevel="true">
+                <gradient
+                    android:endColor="@color/Evergreen"
+                    android:startColor="@color/Evergreen"
+                    android:type="sweep" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

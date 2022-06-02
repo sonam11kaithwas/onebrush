@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#515E91</color>
+    <color name="purple_700">#515E91</color>
+    <color name="teal_200">#515E91</color>
+    <!--    <color name="purple_200">#FFBB86FC</color>-->
+    <!--    <color name="purple_500">#FF6200EE</color>-->
+    <!--    <color name="purple_700">#FF3700B3</color>-->
+    <!--    <color name="teal_200">#FF03DAC5</color>-->
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dot">#E1ECFF</color>
+    <color name="dot_selected">#b4cfff</color>
+    <color name="sl">#000</color>
+    <color name="pin_text_color">#02071A</color>
+
+<!--    <color name="pin_normal">#6B767E</color>-->
+
+
+
+
+    <!--    <color name="colorPrimary">#00848d</color>-->
+    <!--    <color name="colorPrimaryDark">#005760</color>-->
+    <!--    <color name="colorAccent">#00848d</color>-->
+
+    <color name="background_color">#E5E5E5</color>
+    <color name="text_black_color">#000000</color>
+    <color name="wcl_button">#072380</color>
+
+    <color name="status_bar_background">#E5E5E5</color>
+    <color name="midnight">#081030</color>
+    <color name="navy">#515E91</color>
+    <color name="halloween">#EC6B33</color>
+    <color name="darkblue">#3851A6</color>
+    <color name="card_background">#FAFCFE</color>
+    <color name="BrickRed">#C62D42</color>
+    <color name="royal">#072380</color>
+    <color name="allow_color">#515E91</color>
+    <color name="Evergreen">#31D0AA</color>
+    <color name="progress_stroke">#B4CFFF</color>
+    <color name="progress_color">#31D0AA</color>
+    <color name="blue_angel">#B4CFFF</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="light_green">#91c245</color>
+    <color name="light_green1">#8CD51A</color>
+    <color name="yellow">#ffa600</color>
+    <color name="dark_green">#00b600</color>
+</resources>

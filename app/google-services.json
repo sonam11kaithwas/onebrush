@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042882579449",
+    "project_id": "onebrush-9cf74",
+    "storage_bucket": "onebrush-9cf74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042882579449:android:694194da5cf27dc29dcb28",
+        "android_client_info": {
+          "package_name": "com.advantal.onebrush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042882579449-o75gi2jndb31sp3ddkl5hnk0vub064in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSb6akEgiLoiI8l71aYZvTO4LMTqcCG9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042882579449-o75gi2jndb31sp3ddkl5hnk0vub064in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

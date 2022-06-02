@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="welcome_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:padding">5dp</item>
+        <item name="background">@drawable/next_button_shape</item>
+        <item name="android:layout_marginLeft">@dimen/_15sdp</item>
+        <item name="android:layout_marginRight">@dimen/_15sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="indicator_lables">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/text_black_color</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="bio_sub_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/text_black_color</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="bio_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/midnight</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="LoginButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">@dimen/_15sdp</item>
+        <item name="background">@drawable/next_button_shape</item>
+        <item name="android:layout_gravity">center</item>
+        <!--   <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:paddingLeft">@dimen/_32sdp</item>
+        <item name="android:paddingRight">@dimen/_32sdp</item>-->
+
+    </style>
+
+    <style name="uploadBtnnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="cornerRadius">@dimen/_31sdp</item>
+        <item name="background">@drawable/upload_btn_bg</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:paddingLeft">@dimen/_32sdp</item>
+        <item name="android:paddingRight">@dimen/_32sdp</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="myButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/_15sdp</item>
+        <item name="android:layout_marginRight">@dimen/_15sdp</item>
+        <item name="background">@drawable/next_button_shape</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+    </style>
+
+
+    <style name="myCardView">
+        <item name="android:layout_width">@dimen/_200sdp</item>
+        <item name="android:layout_height">@dimen/_120sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_8sdp</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:layout_marginRight">@dimen/_8sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_8sdp</item>
+        <item name="backgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">@dimen/_10sdp</item>
+        <item name="cardElevation">@dimen/_10sdp</item>
+        <item name="cardMaxElevation">@dimen/_8sdp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="background">@drawable/card_view_brdr</item>
+
+
+    </style>
+
+
+    <style name="myCardViewForClickable">
+        <item name="android:layout_width">@dimen/_200sdp</item>
+        <item name="android:layout_height">@dimen/_120sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_8sdp</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:layout_marginRight">@dimen/_8sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_8sdp</item>
+        <item name="backgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">@dimen/_10sdp</item>
+        <item name="cardElevation">@dimen/_10sdp</item>
+        <item name="cardMaxElevation">@dimen/_12sdp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="background">@drawable/card_view_brdr</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="strokeColor">@color/navy</item>
+    </style>
+
+    <style name="card_imgView">
+        <item name="android:layout_width">@dimen/_80sdp</item>
+        <item name="android:layout_height">@dimen/_80sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <!--        <item name="android:layout_marginBottom">@dimen/_10sdp</item>-->
+    </style>
+
+
+    <style name="checkBoks">
+        <item name="android:textColor">@color/navy</item>
+        <item name="buttonTint">@color/navy</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_minus5sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+
+
+    </style>
+
+    <style name="registration_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textColor">@color/midnight</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_below">@id/one_brush_logo</item>
+
+    </style>
+
+    <style name="editext_field">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:background">@drawable/edittext_background_shape</item>
+        <item name="singleLine">true</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/navy</item>
+        <!--        <item name="android:textColorHint">@color/navy</item>
+-->
+
+
+    </style>
+
+    <style name="editext_field_country">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:background">@drawable/edittext_background_shape</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColorHint">@color/navy</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginStart">@dimen/_70sdp</item>
+
+        <item name="android:textColor">@color/navy</item>
+
+
+    </style>
+
+    <style name="editext_field_country_code">
+
+        <item name="android:layout_width">@dimen/_53sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edittext_background_shape</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColorHint">@color/navy</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:textColor">@color/navy</item>
+
+
+    </style>
+
+    <style name="text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="bottom_textview">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+
+
+    </style>
+
+    <style name="card_textview">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+
+
+    </style>
+
+    <style name="login_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textColor">@color/midnight</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginLeft">@dimen/_20sdp</item>
+        <item name="android:layout_marginRight">@dimen/_20sdp</item>
+
+    </style>
+
+    <style name="login_sub_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_20sdp</item>
+        <item name="android:layout_marginRight">@dimen/_20sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+    <style name="AppTheme.Cursor" parent="Theme.Onebrush">
+        <item name="colorAccent">@color/navy</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">@dimen/_200sdp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:layout_marginStart">@dimen/_60sdp</item>
+        <!--        <item name="android:popupBackground">@color/background_color</item>-->
+        <item name="android:dropDownHeight">80dp</item>
+        <!--        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>-->
+        <!--        <item name="android:dropDownSelector">@android:color/white</item>-->
+    </style>
+
+
+    <style name="logoutButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/royal</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:titleMarginBottom">@dimen/_10sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/logout_background</item>
+
+
+    </style>
+
+
+    <style name="RefreshButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textColor">@color/royal</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:titleMarginBottom">@dimen/_10sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_15sdp</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/refresh_btn_background</item>
+
+
+    </style>
+
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+        <!--            <item name="android:progressDrawable">@drawable/circle</item>-->
+        <!--        <item name="android:drawable"></item>-->
+    </style>
+
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/midnight</item>
+        <item name="buttonTint">@color/midnight</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_minus5sdp</item>
+        <item name="fontFamily">@font/steagalmedium</item>
+        <item name="android:buttonTint">@color/midnight</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Avatar" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="progressbarstyle" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/navy</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/steagalmedium</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+
+    <style name="MyRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/custom_btn_radio</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">?android:attr/listDivider</item>
+        //you can give your color here. that will change all divider color in your app.
+    </style>
+
+    <style name="Divider.Vertical" parent="Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:background">#c0c0c0</item>
+    </style>
+
+
+    <style name="text_view_scale">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_18sdp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/navy</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+
+    </style>
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">@color/royal</item>
+        <item name="colorControlActivated">@color/royal</item>
+        <item name="colorControlHighlight">@color/royal</item>
+    </style>
+
+
+    <style name="PinEdittext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/_3sdp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="backgroundTint">@color/royal</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColor">@color/pin_text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="theme">@style/AppTheme.Cursor</item>
+    </style>
+
+</resources>

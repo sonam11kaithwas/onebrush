@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="@dimen/_20sdp">
+
+    <LinearLayout
+        android:id="@+id/multipleImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_profilePic"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:adjustViewBounds="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Avatar"
+            app:srcCompat="@drawable/ic_img" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_profilePic_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_del"
+        android:scaleType="fitEnd" />
+</FrameLayout>
+
+
+    <!--
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/widget_title_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_del" />
+        <ImageView
+            android:id="@+id/img_profilePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/image_round_shape"
+            android:src="@drawable/ic_img"
+           />
+
+
+    </FrameLayout>
+    -->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:id="@+id/mainLayout"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:gravity="center|top"-->
+    <!--    android:orientation="vertical">-->
+
+
+    <!--    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:layout_marginBottom="2.5dp"-->
+    <!--        android:background="@drawable/image_round_shape"-->
+    <!--        app:cardBackgroundColor="@color/white">-->
+
+
+    <!--        <androidx.appcompat.widget.AppCompatImageView-->
+    <!--            android:id="@+id/img_profilePic"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:adjustViewBounds="true"-->
+    <!--      />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/img_profilePic_delete"-->
+    <!--            android:layout_width="@dimen/_20sdp"-->
+    <!--            android:layout_height="@dimen/_20sdp"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_gravity="end"-->
+    <!--            android:layout_marginTop="@dimen/5sdp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:src="@drawable/ic_del"-->
+    <!--            android:text="Before"-->
+    <!--            android:visibility="visible" />-->
+    <!--    </androidx.cardview.widget.CardView>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/img_profilePic"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/image_round_shape"
+            android:elevation="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_profilePic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_del"
+            app:layout_constraintBottom_toTopOf="@+id/img_profilePic"
+            app:layout_constraintEnd_toEndOf="@id/img_profilePic"
+            app:layout_constraintStart_toEndOf="@+id/img_profilePic" />
+    </RelativeLayout>
+    -->

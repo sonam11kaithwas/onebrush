@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="addpatientmodel"
+            type="com.advantal.onebrush.dentis_dash__board_pkg.dentinostic_pkg.patient_pkg.patient_list_pkg.PatientsViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".denti_qus_pkg.select_patient.SelectPatientActivity">
+
+        <TextView
+            android:id="@+id/tv_patient"
+            style="@style/login_header"
+            android:text="@string/select_patient_profile" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_patient"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view_patient"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/tv_create_patient"
+                style="@style/text_view"
+                android:gravity="center"
+                android:text="@string/create_new_profile"
+                android:textAllCaps="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

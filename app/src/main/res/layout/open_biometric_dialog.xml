@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tv_bio_header"
+        style="@style/login_header"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:lineHeight="@dimen/_25sdp"
+        android:text="@string/dentinostic_would_like_to_send_you_notifications"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_bio_sub_header"
+        style="@style/login_sub_header"
+        android:layout_below="@id/tv_bio_header"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:text="@string/notifications_can_be_hints_sounds_or_symbolic_icons" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bio_sub_header"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/steagalmedium"
+        android:gravity="center"
+        android:text="@string/do_not_allow"
+        android:textColor="@color/allow_color"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/llayout_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bio_sub_header"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/noti_on_off_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:checked="true"
+            android:gravity="center"
+            android:thumb="@drawable/switch_selected_thumb"
+            app:track="@drawable/switch_selected_track" />
+        <!--        android:layout_marginLeft="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                   android:layout_marginLeft="@dimen/_10sdp"
+
+    -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/steagalmedium"
+            android:text="@string/allow"
+            android:textColor="@color/allow_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+        <!--        android:layout_marginTop="@dimen/_33sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+
+    -->
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        style="@style/LoginButtonStyle"
+        android:layout_below="@id/llayout_dialog"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/next_button_shape"
+        android:fontFamily="@font/steagalmedium"
+        android:text="@string/next" />
+
+</RelativeLayout>

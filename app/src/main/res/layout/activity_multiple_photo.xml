@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="GalleryModel"
+            type="com.advantal.onebrush.denti_qus_pkg.add_photo_pkg.gallery_view_model_pkg.GalleryViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".denti_qus_pkg.add_photo_pkg.MultiplePhotoActivity">
+
+        <TextView
+            android:id="@+id/tv_header"
+            style="@style/login_header"
+            android:text="@string/do_you_have_a_photo_of_x_ray_you_can_upload" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ib_upload"
+            android:layout_below="@id/tv_header"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical" />
+
+        <ImageButton
+            android:id="@+id/ib_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/background_color"
+            android:clickable="true"
+            android:onClick="onClickImages"
+            android:src="@drawable/ic_upload" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">Onebrush</string>
+
+    <string name="start_dental" translatable="false">Start Your Dental Journey</string>
+    <string name="start_registration" translatable="false">Start Registration</string>
+
+    <string name="how_to_use" translatable="false">So how do you want to use this app (don\'t  worry, you can change your decision later)</string>
+
+    <string name="onebrush_is_your_companion_for_better_oral_health" translatable="false">ONEBRUSH is your companion for better oral health.</string>
+
+    <string name="dentinostic_by_onebrush" translatable="false">Dentinostic by ONEBRUSH</string>
+    <string name="personal_trainner" translatable="false">ONEBRUSH: The personal trainer for your teeth</string>
+    <string name="sign_in_peocedure" translatable="false">This sign in procedure is only required during your first start. After that, our app will remember you!</string>
+    <string name="purchase" translatable="false">By purchasing the ONEBRUSH toothbrush, you will be allowed to connect it  to the app and track your brushing behaviour.</string>
+    <string name="you_can_use_this_app_to_receive_a_remote_diagnosis_from_our_dentist" translatable="false">You can use this app to receive a remote diagnosis from our dentist.</string>
+
+
+    <string name="log_in_to_your_account" translatable="false">Log in to your account</string>
+    <string name="one_brush_text" translatable="false">Hint: You might have created an account during your first registration while purchasing your awesome brush. You can also use this account for your log in.</string>
+    <string name="Email" translatable="false">Email</string>
+    <string name="Password" translatable="false">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="log_in">log in</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <!--    <string name="sign_up"><u>Sign Up</u></string>-->
+    <string name="remote_diagnosis_only">Remote diagnosis only</string>
+    <string name="remote_diagnosis_toothbrush_connection">Remote diagnosis &amp; toothbrush connection</string>
+    <string name="craete_new_account">CRAETE NEW ACCOUNT</string>
+    <string name="noInternet">Connection Problem</string>
+    <string name="no_valid_ssl">noValidSSL</string>
+    <string name="web_adrs">The web address used to reach the dentinostic service is wrong. The host can be reached but not the requested web site.</string>
+    <string name="denti_ser_error">The dentinostic server could not be found in the Internet.</string>
+    <string name="ssl_error">The connection to the backend could not be established because of an error with the SSL. A possible reason is that the website’s certificate is invalid or obsolete.</string>
+    <string name="bad_internet_connection">This device has no Internet connection. Therefore the required function cannot be executed. Please check your Internet settings.</string>
+
+
+    <string name="wel_pat">Welcome Dear patient!</string>
+    <string name="our_patient">Our dentists are always available for you. Simply follow the diagnostic question &amp; answer dialogue.</string>
+    <string name="treament">Treatment swiftly</string>
+    <string name="with_24_h">Within 24h you will receive a diagnosis and an easy to understand doctor’s letter including a prescription, if required. This treatment will cost you 25 E only.</string>
+    <string name="your_data">Your data?  \nThey are 100% safe</string>
+
+    <string name="we_treat">We treat your data and photos with absolute care. Nobody, except your doctor, will get access to this information. Above this, our entire processes are GDPR compliant.</string>
+    <string name="register_free">Register free of charge!</string>
+    <string name="in_order_ro">In order to establish a file for you, we need your email address and further administrational data. Also these data are handled GDPR compliant for sure.</string>
+    <string name="upps_something_went_wrong">Oops... Something went wrong</string>
+    <string name="the_log_in_to_your_account_wasn_t_successful">the log in to your account \n  wasn’t successful</string>
+    <string name="upps_error">Oops... Something went wrong</string>
+
+
+    <string name="terms_condition">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt  amet. Velit officia consequat duis enim velit mollit.</string>
+    <!--    <string name="i_have">I have read the Terms &amp; Conditions and do agree</string>-->
+    <string name="i_agree_pro">I agree to the processing of my personal data for the purpose of medical consulting</string>
+    <string name="i_agree">I want to be informed about news around dentinostic</string>
+    <string name="term_cond">Terms &amp; Conditions</string>
+    <string name="create_pin">Create your PIN</string>
+    <string name="decide_pin">Please decide about your 4-digit PIN.
+this code will ensure that only you read the dentinostic data in this app on your device.</string>
+
+
+    <string name="for_purpose_pin">For the purpose of data security, the app will deactivate after 60 seconds of
+        inactivity. In order to open the app again this PIN code has to be entered.</string>
+    <string name="enter_your">Please enter your 4-digit PIN here for a second time for confirmation.</string>
+    <!--    <string name=""></string>-->
+    <string name="biometric">Biometric Unlock</string>
+    <string name="do_you">Do you want to unlock the app in future by face or fingerprint recognition?</string>
+    <string name="open_app">Open the app with your PIN</string>
+    <string name="code_pin">Your PIN code will open the dentinostic function of this app.</string>
+    <string name="security">For the purpose of data security, the app will deactivate after 60 seconds of inactivity. In order to open the app again then, this PIN code has to be entered.</string>
+    <string name="scan_bio">Let the system scan your biometrics</string>
+    <string name="bio_demo">Your biometric data will open the dentinostic function of this app.</string>
+    <string name="secu_purpose">For the purpose  of data security, the app will deactivate after 60 seconds of inactivity. In order to open the app again then, you have to identify with your biomrtric data.</string>
+    <string name="also_your">also your 3rd trial did not map. In order to be sure about your identity, please log in with your registration data (email and password/0. Then proceed to Settings and reset the biometric authentification data.</string>
+    <string name="wrong_email_address">Wrong email address...</string>
+    <string name="email_not_exit">We could not vrify given email,Please check email and try again!</string>
+    <string name="enter_email_address">Please Enter Email Address...</string>
+    <string name="plz_enter_password">Please Enter Password</string>
+    <string name="in_case_you_do_not_remember_the_password_you_can_ask_for_a_new_one">
+                      Password should be Minimum 8 characters at least 1 Uppercase Alphabet, 1 Lowercase Alphabet, 1 Number and 1 Special Character:
+</string>
+    <string name="save_continue"><![CDATA[save & Continue]]></string>
+    <string name="already_have_an_account_sign_in"><u>Already have an account?</u> <font fgcolor='#EC6B33'><u> Sign In </u></font></string>
+
+    <string name="i_have">I have read the <font fgcolor='#C62D42'>Terms &amp; Conditions </font>and do agree</string>
+    <string name="i_have123">I have read the <font fgcolor='#C62D42'>Terms &amp; Conditions </font>and do agree</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="no_worries_just_enter_your_email_and_we_ll_send_you_a_password">No worries! Just enter your email \n and we’ll send you a password</string>
+    <string name="request_new_password">Request new password</string>
+    <string name="a_new_password_will_be_sent_to_your_mail_account">A new password will be sent to your mail account</string>
+    <string name="please_use_characters_low_and_capital_numbers_in_combination">Please use characters low and capital numbers in \n  combination</string>
+    <string name="create_your_new_onebrush_account">Create your new ONEBRUSH account</string>
+    <string name="create_your_onebrush_account">Create your ONEBRUSH account</string>
+    <string name="surname">Surname</string>
+    <string name="gender">Gender</string>
+    <string name="prefered_language">Prefered Language</string>
+    <string name="name">Name</string>
+    <string name="i_agree_to_the_terms_amp_conditions_and_privacy_policy"><font fgcolor="#515E91">I agree to the</font><font fgcolor='#C62D42'> Terms &amp; Conditions </font><font fgcolor="#515E91">  and</font> </string>
+
+    <string name="save_amp_continue"><![CDATA[save & Continue]]></string>
+    <string name="don_t_have_account_sign_up"><u>Don’t have account? </u><font fgcolor='#C62D42'><u>Sign Up</u> </font></string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="uuups_please_enter_a_valid_e_mail_adress">Oops. Please enter a valid e-mail adress!</string>
+    <string name="your_one_time_password_was_sent_to_your_mail_adress">Your one time password was \n sent to your mail-adress</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="so_how_do_you_want_to_use_this_app_don_t_worry_you_can_change_your_decision_later">So how do you want to use this app (don\'t worry, you can change your decision later)</string>
+    <string name="bio_unlok">Biometric Unlock</string>
+    <string name="do_you_want">Do you want to unlock the app in future by \n face or fingerprint recognition?</string>
+    <string name="no_unlock_with_pin"><font fgcolor='#EC6B33'>No, unlock with PIN</font></string>
+
+    <!--  <string name="selectgender">Select Gender</string>
+      <string name="male">Male</string>
+      <string name="female">Female</string>
+      <string name="other">Other</string>-->
+    <string name="selectlanguage">Select Language</string>
+    <string name="english">English</string>
+    <string name="german">German</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="confirm_pin_txt">Please enter your 4-digit PIN here for a
+        \nsecond time for confirmation.</string>
+    <string name="open_pin_txt">Open the app with your PIN</string>
+    <string name="open_pin_purpose">Your PIN code will open the \n dentinostic function of this app.
+        \n \n For the purpose of data security, the app will deactivate after 60 seconds of inactivity. In order to open the app again then, this PIN code has to be entered.</string>
+    <string name="next">Next</string>
+    <string name="dentinostic_would_like_to_send_you_notifications">Dentinostic would like to \n send you notifications.</string>
+    <string name="notifications_can_be_hints_sounds_or_symbolic_icons">Notifications can be hints \n sounds or symbolic icons.</string>
+    <string name="pin_not_match">The second PIN code did not map with the first one registered. You can give it another try.</string>
+    <!--    <string name="pin_not_match">Password does not match</string>-->
+    <string name="your_registered_data_will_help_to_present_your_data_about_cleaning_times_and_quality">Your registered data will help to present your data about cleaning times and quality</string>
+    <string name="dentinostic_main_menu">Dentinostic main menu</string>
+    <string name="dear_patient_we_are_happy_to_help_you_our_medical_team_is_available_for_you_all_time">Dear patient, we are happy to help you. Our medical team is available for you all time.</string>
+    <string name="new_case">New case</string>
+    <string name="here_you_can_open_a_new_diagnostic_request">Here you can open a new diagnostic request.</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="let_the_system_scan_your_biometrics">Let the system scan your biometrics</string>
+    <string name="domstric">Your biometric data will open the dentinostic function of this app. \n
+        \n For the purpose  of data security, the app will deactivate after 60 seconds of inactivity. In order to open the app again then, you have to identify with your biomrtric data.</string>
+    <string name="also_ur">also your 3rd trial did not map. In order to be sure about your identity, please log in with your registration data (email and password/0. Then proceed to Settings and reset the biometric authentification data.</string>
+    <string name="welcome_to_our_diagnostic_dialog">Welcome to our \n diagnostic dialog!</string>
+    <string name="we_will_guide_you_through">We will guide you through the description of your problem.</string>
+    <string name="start">Start</string>
+    <string name="select_patient_profile">Select patient profile</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="pin_error_not_match2">You can give it another try.</string>
+    <string name="pin_error_not_match">The PIN code did not map with the first one registered</string>
+    <string name="pin_match">This Pin has to be safely stored.The app shall never loose this information</string>
+    <string name="street_and_housenumber">Street and Housenumber</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="collection_of_personal_data">Collection of \n personal data</string>
+    <string name="description_of_your_medical_issue">Description of \n your medical issue</string>
+    <string name="payment_25">Payment \n (25€)</string>
+    <string name="toothache">Toothache</string>
+    <string name="log_out">Log out</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="save">Save</string>
+    <string name="enter_old_password">Enter old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="passwords_match">Passwords match</string>
+    <string name="feedback">Feedback</string>
+    <string name="submit">Submit</string>
+    <string name="account_settings">Account settings</string>
+    <string name="add_new_brush">Add new Brush</string>
+    <string name="add_new_account">Add new Account</string>
+    <string name="cancel">Cancel</string>
+    <string name="account_1">Account 1</string>
+    <string name="_2_toothbrushs">2 Toothbrushs</string>
+    <string name="account_2">Account 2</string>
+    <string name="_1_toothbrush">1 Toothbrush</string>
+    <string name="are_you_sure_you_want_to_log_out">Are you sure you \n want to Log out?</string>
+    <string name="you_will_lose_all">You will lose all your progress and \n  statistics on these account</string>
+    =======
+    <!--    <string name="privacy_policy">Privacy Policy</string>-->
+    >>>>>>> 2cc614e8cf2dc55c0c8b8f0273548d1afdd5f200
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="create_your_new_patient">Create a new patient profile</string>
+    <string name="salutation">Salutation</string>
+    <string name="create_patient_prfile">Create patient profile</string>
+    <string name="mr">Mr</string>
+    <string name="mis">Miss</string>
+    <string name="do_you_have_a_photo_of_x_ray_you_can_upload">Do you have a photo of \n X-ray you can upload?</string>
+    <string name="done">Done!</string>
+    <string name="total">Total</string>
+    <string name="your_case">Your case will now be examined and diagnostic statement will be prepared for you within 24h. In case our dentist needs to ask questions for a clarification, you will be contacted by mail.</string>
+
+    <string name="go_to_denti">go to Dentinostic screen</string>
+    <string name="kindly_select_your_payment_method">Kindly select your payment method</string>
+    <string name="finish_payment">Finish payment</string>
+    <string name="create_new_patient">Create a new patient profile</string>
+    <string name="enter_answer">Enter Answer</string>
+    <string name="password_instruction">Please use characters low and capital numbers in combination</string>
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <string name="are_you_sure">Are you sure,You wanted to make \n decision</string>
+    <string name="here_you_find_the_cases_already_registered">Here you find the cases already registered.</string>
+    <string name="case_information">Case Information</string>
+    <string name="here_are_the_data">Here are the data about the case you have opened. You can click on the provided links to see the related documents in detail.</string>
+    <string name="see_diagnosis">See diagnosis</string>
+    <string name="show_invoice">Show invoice</string>
+    <string name="see_questionnaire">See questionnaire</string>
+    <string name="see_registered_pictures">See registered pictures</string>
+    <string name="create_new_profile">Create new profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="download_pdf">Download PDf</string>
+    <string name="dental_examination">Dental Examination</string>
+    <string name="_25">25€</string>
+    <string name="patient">Patient</string>
+    <string name="registration">Registration</string>
+    <string name="_24_10_2021_15_31">24.10.2021 15:31</string>
+    <string name="request">Request</string>
+    <string name="dr_dentina">Dr. Dentina</string>
+    <string name="dentist">Dentist</string>
+    <string name="_25_10_2021_11_04">25.10.2021 11:04</string>
+    <string name="status">Status</string>
+    <string name="answered">Answered</string>
+    <string name="what_s_your_concern">What’s your concern?</string>
+
+    <string name="conti_with_pay">Continue with payment</string>
+
+    <string name="privacy_policy"><font fgcolor='#C62D42'>\n Privacy Policy</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="pin_safely">This PIN has to be safely stored.The app shall never loose this information</string>
+    <string name="pin_safely_message">Your PIN is registered and you can use it from now on to open the dentinostic service.</string>
+    <string name="onebrush">ONEBRUSH</string>
+    <string name="are_you_want_to_save_data">Are you want to save data</string>
+    <string name="privacy_pdf">Privacy Policy</string>
+    <string name="app_version_2_0">App Version 2.0</string>
+
+    <string name="on_a_scale">On a scale from 1 to 10 \n how strong is your pain if \n 10 ist the most?</string>
+    <string name="num1">1</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="some_pain">Some Pain</string>
+
+
+    <string name="very_week">Very weak</string>
+    <string name="week">Weak</string>
+    <string name="so_so">So-so</string>
+    <string name="good">Good</string>
+    <string name="verygood">Very Good</string>
+    <string name="great">Great!</string>
+
+    <string name="ok">Ok</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_surname">Enter Surname</string>
+    <string name="enter_street_and_housenumber">Enter Street and Housenumber</string>
+    <string name="enter_zipcode">Enter Zipcode</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="germany">Germany</string>
+    <string name="country_code">+49</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="upload_x_ray_photo">Upload x-ray/photo</string>
+    <string name="allow">Allow</string>
+    <string name="do_not_allow">Do not Allow</string>
+    <string name="pin_txt">Please decide about your 4-digit PIN. this code will ensure that only you read the dentinostic data in this app on your device.\n For the purpose of data security, the app will deactivate after 60 seconds of inactivity. In order to open the app again this PIN code has to be entered.</string>
+</resources>

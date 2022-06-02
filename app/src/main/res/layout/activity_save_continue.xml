@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="continueModel"
+            type="com.advantal.onebrush.registration_pkg.save_continue_pkg.save_continue_viewmodel_pkg.Save_Continue_View_Model" />
+    </data>
+
+    <!--
+        <RelativeLayout
+            android:id="@+id/rlayoutParant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            tools:context=".registration_pkg.save_continue_pkg.SaveContinueActivity">
+
+            <ImageView
+                android:id="@+id/one_brush_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/cross_ic"
+                android:onClick="onClickButton" />
+
+            <TextView
+                android:id="@+id/tv_newaccount"
+                style="@style/login_header"
+                android:layout_below="@id/iv_cross"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/create_your_new_onebrush_account" />
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_newaccount"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_street"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/street_and_housenumber" />
+
+                    <EditText
+                        android:id="@+id/et_street"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint=""
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/tv_zipcode"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/zipcode" />
+
+                    <EditText
+                        android:id="@+id/et_zipcode"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint=""
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/city" />
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint=""
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/country" />
+
+                    <EditText
+                        android:id="@+id/et_country"
+                        style="@style/editext_field"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:drawableRight="@drawable/ic_drop_down"
+                        android:elevation="@dimen/_4sdp"
+                        android:focusable="false"
+                        android:hint=""
+                        android:onClick="onClickButton"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Phone" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlayout_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_text_phone"
+                            android:layout_width="@dimen/_54sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:background="@drawable/edittext_background_shape"
+                            android:elevation="@dimen/_4sdp"
+                            android:fontFamily="@font/steagalmedium"
+                            android:gravity="center"
+                            android:onClick="onClickButton"
+                            android:textColor="@color/navy"
+                            android:textColorHint="@color/navy" />
+
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            style="@style/editext_field_country"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:elevation="@dimen/_4sdp"
+                            android:hint="@string/enter_phone_number"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:textColorHint="@color/grey" />
+
+
+                    </RelativeLayout>
+
+                    &lt;!&ndash; <EditText
+                         android:id="@+id/et_phone"
+                         style="@style/editext_field"
+                         android:layout_below="@id/tv_name"
+                         android:elevation="@dimen/_4sdp"
+                         android:hint=""
+                         android:inputType="number"
+                         android:maxLength="12" />&ndash;&gt;
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+
+                android:id="@+id/pin_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/prentlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/background_color">
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/logo_for_pin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:src="@drawable/logo" />
+
+
+                            <ImageView
+                                android:id="@+id/cross_img_for_pin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:onClick="onClickButton"
+                                android:src="@drawable/cross_ic" />
+
+
+                            <TextView
+                                android:id="@+id/txt_heading"
+                                style="@style/bio_header"
+                                android:layout_below="@+id/logo_for_pin"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:text="@string/open_pin_txt"
+                                android:textSize="@dimen/_18sdp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/pin_txt"
+                                style="@style/bio_header"
+                                android:layout_below="@+id/txt_heading"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:text="@string/open_pin_purpose"
+                                android:textSize="@dimen/_11sdp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/pin_txt"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="@dimen/_40sdp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                                    android:id="@+id/txt_pin_entry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:background="@null"
+                                    android:cursorVisible="true"
+                                    android:digits="0123456789"
+
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center_horizontal"
+                                    android:inputType="number"
+                                    android:maxWidth="@dimen/_20sdp"
+                                    android:maxLength="4"
+                                    android:textCursorDrawable="@drawable/cursor_custom"
+                                    android:textIsSelectable="false"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/login_btn"
+                        style="@style/welcome_button"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/next_button_shape"
+                        android:onClick="onClickButton"
+                        android:text="@string/go_to_login"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/next_button_shape"
+                android:onClick="onClickButton"
+                android:text="@string/save_continue"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+    -->
+
+
+    <RelativeLayout
+        android:id="@+id/rlayoutParant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".registration_pkg.save_continue_pkg.SaveContinueActivity">
+
+        <RelativeLayout
+            android:id="@+id/layout_for_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/back_button"
+                android:onClick="onClickButton" />
+
+            <ImageView
+                android:id="@+id/one_brush_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/cross_ic"
+                android:onClick="onClickButton"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_newaccount"
+                style="@style/login_header"
+                android:layout_below="@id/iv_cross"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/create_your_new_onebrush_account" />
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_newaccount"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_street"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/street_and_housenumber" />
+
+                    <EditText
+                        android:id="@+id/et_street"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint="@string/enter_street_and_housenumber"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_zipcode"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/zipcode" />
+
+                    <EditText
+                        android:id="@+id/et_zipcode"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint="@string/enter_zipcode"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/city" />
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint="@string/enter_city"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="@string/country" />
+
+                    <EditText
+                        android:id="@+id/et_country"
+                        style="@style/editext_field"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:drawableRight="@drawable/ic_drop_down"
+                        android:elevation="@dimen/_4sdp"
+                        android:focusable="false"
+                        android:onClick="onClickButton"
+                        android:padding="@dimen/_12sdp"
+                        android:textColorHint="@color/navy"
+                        android:visibility="visible" />
+                    <!--                        android:hint="@string/germany"
+-->
+
+                    <!--
+                                        <RelativeLayout
+                                            android:id="@+id/relative_layout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+
+                                            <RelativeLayout
+                                                android:id="@+id/rlayout_country"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tv_text_country"
+                                                    android:layout_width="@dimen/_56sdp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="@dimen/_15sdp"
+                                                    android:layout_marginTop="@dimen/_5sdp"
+                                                    android:layout_marginRight="@dimen/_15sdp"
+                                                    android:layout_marginBottom="@dimen/_2sdp"
+                                                    android:background="@drawable/edittext_background_shape"
+                                                    android:drawableRight="@drawable/ic_drop_down"
+                                                    android:elevation="@dimen/_4sdp"
+                                                    android:fontFamily="@font/steagalmedium"
+                                                    android:onClick="onClickButton"
+                                                    android:textColor="@color/navy"
+                                                    android:textColorHint="@color/navy" />
+
+
+                                                <EditText
+                                                    android:id="@+id/et_country"
+                                                    style="@style/editext_field_country"
+                                                    android:layout_marginBottom="@dimen/_2sdp"
+                                                    android:elevation="@dimen/_4sdp"
+                                                    android:hint=""
+                                                    android:inputType="number"
+                                                    android:maxLength="8"
+                                                    android:visibility="visible" />
+
+
+                                            </RelativeLayout>
+
+                                            <Spinner
+                                                android:id="@+id/spinner"
+                                                style="@style/spinner_style"
+                                                android:layout_width="0dp"
+                                                android:layout_height="0dp"
+                                                android:background="@drawable/ic_drop_down"
+                                                android:drawSelectorOnTop="true"
+                                                android:dropDownVerticalOffset="-53dp"
+                                                android:spinnerMode="dropdown"
+                                                android:textAlignment="center"
+                                                android:visibility="visible" />
+                                        </RelativeLayout>
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/text_view"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Phone" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlayout_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_text_phone"
+                            android:layout_width="@dimen/_54sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:background="@drawable/edittext_background_shape"
+                            android:elevation="@dimen/_4sdp"
+                            android:fontFamily="@font/steagalmedium"
+                            android:gravity="center"
+                            android:padding="@dimen/_12sdp"
+                            android:textColor="@color/navy"
+                            android:textColorHint="@color/navy"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="normal" />
+                        <!--                            android:hint="@string/country_code"
+-->
+
+                        <!--      <View
+                                  android:layout_width="@dimen/_5sdp"
+                                  android:layout_height="@dimen/_50sdp"
+                                  android:layout_marginStart="@dimen/_62sdp"
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:background="@color/grey" />-->
+
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            style="@style/editext_field_country"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:elevation="@dimen/_4sdp"
+                            android:hint="@string/enter_phone_number"
+                            android:inputType="phone"
+                            android:padding="@dimen/_12sdp"
+                            android:textColorHint="@color/grey" />
+
+                        <!--                            android:maxLength="12"
+                        -->
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_zipcode1"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint=""
+                        android:inputType="text"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_zipcode2"
+                        style="@style/editext_field"
+                        android:layout_below="@id/tv_name"
+                        android:elevation="@dimen/_4sdp"
+                        android:hint=""
+                        android:inputType="text"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            style="@style/LoginButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/next_button_shape"
+            android:onClick="onClickButton"
+            android:text="@string/save_amp_continue" />
+
+
+        <!--        &lt;!&ndash;for pin&ndash;&gt;-->
+
+        <LinearLayout
+
+            android:id="@+id/pin_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/prentlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/background_color">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/logo_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:src="@drawable/logo" />
+
+
+                        <ImageView
+                            android:id="@+id/cross_img_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:onClick="onClickButton"
+                            android:src="@drawable/cross_ic" />
+
+
+                        <TextView
+                            android:id="@+id/txt_heading"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/logo_for_pin"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:text="@string/open_pin_txt"
+                            android:textSize="@dimen/_18sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pin_txt"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/txt_heading"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/open_pin_purpose"
+                            android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pin_txt"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_80sdp">
+
+                    <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                        android:id="@+id/txt_pin_entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:digits="0123456789"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberPassword"
+                        android:maxWidth="@dimen/_20sdp"
+                        android:maxLength="4"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/pin_text_color"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+
+                    <!--  <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                          android:id="@+id/txt_pin_entry"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:background="@null"
+                          android:cursorVisible="true"
+                          android:digits="0123456789"
+                          android:focusable="true"
+                          android:focusableInTouchMode="true"
+                          android:gravity="center_horizontal"
+                          android:imeOptions="actionDone"
+                          android:inputType="numberPassword"
+                          android:maxWidth="@dimen/_20sdp"
+                          android:maxLength="4"
+                          android:padding="@dimen/_10sdp"
+                          android:textColor="@color/pin_text_color"
+                          android:textIsSelectable="false"
+                          android:textSize="20sp" />-->
+                    <!--  -->
+                </LinearLayout>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    style="@style/LoginButtonStyle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/next_button_shape"
+                    android:onClick="onClickButton"
+                    android:text="@string/go_to_login"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!--End Pin-->
+
+
+        <RelativeLayout
+            android:id="@+id/bio_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:gravity="center|start|top"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center|start|top">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/logo" />
+
+
+                    <ImageView
+                        android:id="@+id/cross_img_bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:onClick="onClickButton"
+                        android:src="@drawable/cross_ic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_heading_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/logo"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/let_the_system_scan_your_biometrics"
+                        android:textSize="@dimen/_18sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pin_txt_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/txt_heading_bio"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/domstric"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_below="@+id/pin_txt_bio"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:src="@drawable/touch_id" />
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/no_unlock_tx"
+                style="@style/bio_header"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/also_ur"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

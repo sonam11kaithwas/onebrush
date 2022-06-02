@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="12dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp">
+
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:text="Pending"
+            android:fontFamily="@font/steagalmedium"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/steagalmedium"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="right"
+            android:text="Waiting for dentist answer"
+            android:textColor="@color/darkblue"
+            android:textSize="@dimen/_12sdp" />
+
+        <!--
+                </androidx.cardview.widget.CardView>
+        -->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prentlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:gravity="center|start|top"
+    tools:context=".dentis_dash__board_pkg.bio_metric_pkg.FingerPrintActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_for_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start|top">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:onClick="FingrPrintViewClickEvent"
+                    android:src="@drawable/back_button" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:id="@+id/cross_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:onClick="FingrPrintViewClickEvent"
+                    android:src="@drawable/cross_ic"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_heading"
+                    style="@style/bio_header"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/bio_unlok"
+
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/pin_txt"
+                    style="@style/bio_header"
+                    android:layout_below="@+id/txt_heading"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:lineSpacingExtra="@dimen/_4sdp"
+                    android:text="@string/do_you_want"
+                    android:textSize="@dimen/_11sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pin_txt"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/size_100_dp"
+                    android:src="@drawable/touch_id_ic" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yes_btn"
+            style="@style/LoginButtonStyle"
+            android:layout_above="@+id/no_unlock_tx"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/next_button_shape"
+            android:onClick="FingrPrintViewClickEvent"
+            android:text="@string/yes" />
+
+        <TextView
+            android:id="@+id/no_unlock_tx"
+            style="@style/bio_header"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:onClick="FingrPrintViewClickEvent"
+            android:text="@string/no_unlock_with_pin"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_11sdp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pin_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/prentlay_for_pin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/background_color">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/logo_for_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/logo" />
+
+
+                    <ImageView
+                        android:id="@+id/cross_img_for_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:onClick="FingrPrintViewClickEvent"
+                        android:src="@drawable/cross_ic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_heading_for_pin"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/logo_for_pin"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/open_pin_txt"
+                        android:textSize="@dimen/_18sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pin_txt_for_pin"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/txt_heading_for_pin"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/open_pin_purpose"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pin_txt_for_pin"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_80sdp">
+
+                        <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                            android:id="@+id/txt_pin_entry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:digits="0123456789"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_horizontal"
+                            android:imeOptions="actionDone"
+                            android:inputType="numberPassword"
+                            android:maxWidth="@dimen/_20sdp"
+                            android:maxLength="4"
+                            android:padding="@dimen/_10sdp"
+                            android:textColor="@color/pin_text_color"
+                            android:textIsSelectable="false"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+                    <!--
+                                           <LinearLayout
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:layout_below="@+id/pin_txt_for_pin"
+                                               android:layout_centerInParent="true"
+                                               android:layout_marginTop="@dimen/_40sdp"
+                                               android:gravity="center_horizontal"
+                                               android:orientation="vertical">
+
+                                               <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                                                   android:id="@+id/txt_pin_entry"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_gravity="center_horizontal"
+                                                   android:layout_marginLeft="@dimen/_10sdp"
+                                                   android:layout_marginRight="@dimen/_10sdp"
+                                                   android:background="@null"
+                                                   android:cursorVisible="true"
+                                                   android:digits="0123456789"
+                                                   android:focusable="true"
+                                                   android:focusableInTouchMode="true"
+                                                   android:gravity="center_horizontal"
+                                                   android:inputType="numberPassword"
+                                                   android:maxWidth="@dimen/_20sdp"
+                                                   android:maxLength="4"
+                                                   android:textCursorDrawable="@drawable/cursor_custom"
+                                                   android:textIsSelectable="false"
+                                                   android:textSize="20sp" />
+                                           </LinearLayout>
+                    -->
+                </RelativeLayout>
+
+            </ScrollView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                style="@style/LoginButtonStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/next_button_shape"
+                android:onClick="FingrPrintViewClickEvent"
+                android:text="@string/go_to_login"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

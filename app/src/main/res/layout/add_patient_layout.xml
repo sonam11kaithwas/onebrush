@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp">
+    <!--    android:layout_marginStart="@dimen/_15sdp"
+
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/layout"
+        android:padding="@dimen/_2sdp"
+        android:orientation="horizontal">
+
+        <com.advantal.onebrush.utilies_pkg.RoundedImageView
+            android:id="@+id/circle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_circle" />
+
+
+        <TextView
+            android:id="@+id/patient_nm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/radio_patient"
+            android:layout_toEndOf="@+id/circle_img"
+            android:layout_toRightOf="@id/circle_img"
+            android:fontFamily="@font/steagalmedium"
+            android:text="Via Primus 1, Colonia"
+            android:textColor="@color/midnight"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal" />
+
+        <!--        <RadioGroup-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content">-->
+        <RadioButton
+            android:id="@+id/radio_patient"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:button="@drawable/circle_radio"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/circle_radio"
+            android:visibility="visible" />
+        <!--        checkBox.setButtonDrawable(R.drawable.custom_checkbox);
+                    android:buttonTint="@color/midnight"
+
+        -->
+        <!--        </RadioGroup>-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"imgUrl": "http://36.255.3.15:8086/onebrush-images/welcome.png",
+			"title": "Welcome Dear patient!",
+			"descriptions": "Our dentists are always available for you. Simply follow the diagnostic question & answer dialogue.",
+			"creationDate": null,
+			"lastUpdationDate": null,
+			"isDeleted": false
+		},
+		{
+			"id": 2,
+			"imgUrl": "http://36.255.3.15:8086/onebrush-images/welcome.png",
+			"title": "Treatment swiftly",
+			"descriptions": "Within 24h you will receive a diagnosis and an easy to understand doctor’s letter including a prescription, if required. This treatment will cost you 25 E only.",
+			"creationDate": null,
+			"lastUpdationDate": null,
+			"isDeleted": false
+		},
+		{
+			"id": 3,
+			"imgUrl": "http://36.255.3.15:8086/onebrush-images/welcome.png",
+			"title": "Your data?\nThey are 100% safe",
+			"descriptions": "We treat your data and photos with absolute care. Nobody, except your doctor, will get access to this information. Above this, our entire processes are GDPR compliant.",
+			"creationDate": null,
+			"lastUpdationDate": null,
+			"isDeleted": false
+		},
+		{
+			"id": 4,
+			"imgUrl": "http://36.255.3.15:8086/onebrush-images/welcome.png",
+			"title": "Register free of charge!",
+			"descriptions": "In order to establish a file for you, we need your email address and further administrational data. Also these data are handled GDPR compliant for sure.",
+			"creationDate": null,
+			"lastUpdationDate": null,
+			"isDeleted": false
+		}
+	]
+
+}

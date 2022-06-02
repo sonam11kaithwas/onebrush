@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="paymentModel"
+            type="com.advantal.onebrush.registration_pkg.payment_pkg.payment_view_pkg.PaymentAcceptViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context="com.advantal.onebrush.registration_pkg.payment_pkg.PaymentAcceptActivity">
+
+        <RelativeLayout
+            android:id="@+id/layout_for_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/back_button"
+                android:onClick="paymentClickListner" />
+
+            <ImageView
+                android:id="@+id/one_brush_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/cross_ic"
+                android:onClick="paymentClickListner" />
+
+
+            <!--steps views-->
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_cross"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:gravity="center|start"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/progress_colo_bg"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_toStartOf="@+id/tx2"
+                    android:layout_toEndOf="@+id/tx1"
+                    android:background="@color/Evergreen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/progress_colo_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_toStartOf="@+id/tx3"
+                    android:layout_toEndOf="@+id/tx2"
+                    android:background="@color/Evergreen" />
+
+                <TextView
+                    android:id="@+id/tx3"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_minus5sdp"
+                    android:background="@drawable/circle_brdr"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/Evergreen" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rllable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:gravity="center|start"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tx1_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/steagalmedium"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:text="@string/collection_of_personal_data"
+                    android:textColor="@color/navy"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/tx2_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/steagalmedium"
+                    android:gravity="center"
+                    android:text="@string/description_of_your_medical_issue"
+                    android:textColor="@color/navy"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tx3_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/steagalmedium"
+                    android:gravity="center"
+                    android:text="@string/payment_25"
+                    android:textColor="@color/navy"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/next_state_button"
+                android:layout_below="@id/rllable"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <!--        android:layout_below="@id/linear_lay"
+                -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/myCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="center">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp">
+
+                                <TextView
+                                    android:id="@+id/dental_exam_lable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:fontFamily="@font/steagalmedium"
+                                    android:text="Dental Examination"
+                                    android:textColor="@color/text_black_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/dental_exam_celc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:fontFamily="@font/steagalmedium"
+                                    android:text="25€"
+                                    android:textColor="@color/text_black_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:id="@+id/iv_dot"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_below="@id/dental_exam_celc"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:layerType="software"
+                                    android:src="@drawable/dotted" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/dental_exam_lable"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    android:fontFamily="@font/steagalmedium"
+                                    android:text="@string/total"
+                                    android:textColor="@color/text_black_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/dental_exam_celc"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    android:fontFamily="@font/steagalmedium"
+                                    android:text="25€"
+                                    android:textColor="@color/text_black_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="normal" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:fontFamily="@font/steagalmedium"
+                            android:gravity="center"
+                            android:text="@string/kindly_select_your_payment_method"
+                            android:textColor="@color/navy"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/done_lable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:src="@drawable/payment_methods" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next_state_button"
+                style="@style/LoginButtonStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/next_button_shape"
+                android:onClick="paymentClickListner"
+                android:text="@string/finish_payment" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:id="@+id/pin_view_layout"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/prentlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/background_color">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/logo_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:src="@drawable/logo" />
+
+
+                        <ImageView
+                            android:id="@+id/cross_img_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:onClick="paymentClickListner"
+                            android:src="@drawable/cross_ic" />
+
+
+                        <TextView
+                            android:id="@+id/txt_heading"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/logo_for_pin"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:text="@string/open_pin_txt"
+                            android:textSize="@dimen/_18sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pin_txt"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/txt_heading"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/open_pin_purpose"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pin_txt"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_80sdp">
+
+                            <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                                android:id="@+id/txt_pin_entry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@null"
+                                android:cursorVisible="true"
+                                android:digits="0123456789"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_horizontal"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberPassword"
+                                android:maxWidth="@dimen/_20sdp"
+                                android:maxLength="4"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@color/pin_text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="20sp" />
+
+
+                            <!--  <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                                  android:id="@+id/txt_pin_entry"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center_horizontal"
+                                  android:layout_marginLeft="@dimen/_10sdp"
+                                  android:layout_marginRight="@dimen/_10sdp"
+                                  android:background="@null"
+                                  android:cursorVisible="true"
+                                  android:digits="0123456789"
+                                  android:focusable="true"
+                                  android:focusableInTouchMode="true"
+                                  android:gravity="center_horizontal"
+                                  android:imeOptions="actionDone"
+                                  android:inputType="numberPassword"
+                                  android:maxWidth="@dimen/_20sdp"
+                                  android:maxLength="4"
+                                  android:padding="@dimen/_10sdp"
+                                  android:textColor="@color/pin_text_color"
+                                  android:textIsSelectable="false"
+                                  android:textSize="20sp" />-->
+                            <!--  -->
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    style="@style/LoginButtonStyle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/next_button_shape"
+                    android:onClick="paymentClickListner"
+                    android:text="@string/go_to_login"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--End Pin-->
+
+
+        <RelativeLayout
+            android:id="@+id/bio_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:gravity="center|start|top"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center|start|top">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/logo" />
+
+
+                    <ImageView
+                        android:id="@+id/cross_img_bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:onClick="paymentClickListner"
+                        android:src="@drawable/cross_ic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_heading_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/logo"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/let_the_system_scan_your_biometrics"
+                        android:textSize="@dimen/_18sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pin_txt_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/txt_heading_bio"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/domstric"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_below="@+id/pin_txt_bio"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:src="@drawable/touch_id" />
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/no_unlock_tx"
+                style="@style/bio_header"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/also_ur"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>
+

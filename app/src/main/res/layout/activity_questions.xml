@@ -1,0 +1,455 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="questionmodel"
+            type="com.advantal.onebrush.dentis_dash__board_pkg.dentis_case_information.denti_case_pkg.denti_qus_pkg.QuesViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".dentis_dash__board_pkg.dentis_case_information.denti_case_pkg.denti_qus_pkg.QuestionsActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_for_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            tools:context=".dentis_dash__board_pkg.dentis_case_information.CaseInformationActivity">
+
+
+            <ImageView
+                android:id="@+id/back_btn_qus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/back_button"
+                android:onClick="onClickQus" />
+
+            <ImageView
+                android:id="@+id/one_brush_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/cross_ic"
+                android:onClick="onClickQus" />
+
+            <TextView
+                android:id="@+id/tv_case_header"
+                style="@style/login_header"
+                android:layout_below="@id/one_brush_logo"
+                android:text="@string/case_information" />
+
+            <!-- <TextView
+                 android:id="@+id/tv_case_sub_header"
+                 style="@style/bio_sub_header"
+                 android:layout_below="@id/tv_case_header"
+                 android:layout_marginStart="@dimen/_15sdp"
+                 android:layout_marginEnd="@dimen/_15sdp"
+                 android:text="@string/here_are_the_data"
+                 android:textColor="@color/navy" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/patient_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_case_header"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/relative_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_case_patient"
+                        style="@style/card_textview"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/patient" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_name"
+                        style="@style/card_textview"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_toRightOf="@id/tv_case_patient"
+
+                        android:text=""
+                        android:textColor="@color/midnight" />
+
+                    <TextView
+                        android:id="@+id/tv_case_regis"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_case_patient"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/registration" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_regis"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_patient_name"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/tv_case_regis"
+                        android:text="@string/_24_10_2021_15_31"
+                        android:textColor="@color/midnight" />
+
+                    <TextView
+                        android:id="@+id/tv_case_req"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_case_regis"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/request" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_req"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_patient_regis"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/tv_case_regis"
+                        android:text="@string/dr_dentina"
+                        android:textColor="@color/midnight" />
+
+                    <TextView
+                        android:id="@+id/tv_case_dentist"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_case_req"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/dentist" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_dentist"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_patient_req"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/tv_case_regis"
+                        android:text="@string/_25_10_2021_11_04"
+                        android:textColor="@color/midnight" />
+
+                    <TextView
+                        android:id="@+id/tv_case_status"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_case_dentist"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/status" />
+
+                    <TextView
+                        android:id="@+id/tv_patient_status"
+                        style="@style/card_textview"
+                        android:layout_below="@id/tv_patient_dentist"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_toRightOf="@id/tv_case_regis"
+                        android:text="@string/answered"
+                        android:textColor="@color/Evergreen" />
+
+
+                </RelativeLayout>
+
+
+                <!--  <ImageView
+                      android:id="@+id/img"
+                      android:layout_width="200dp"
+                      android:layout_height="200dp"
+                      android:layout_gravity="center"
+                      android:layout_margin="10dp"
+                      android:contentDescription="@string/app_name"
+                      android:src="@drawable/gfgimage" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom|center_horizontal"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="20dp"
+                      android:text="@string/app_name"
+                      android:textSize="20sp"
+                      android:textStyle="bold" />
+          -->
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_download"
+                android:layout_below="@id/patient_detail"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:scrollbars="vertical" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_download"
+                style="@style/RefreshButtonStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:onClick="onClickQus"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/download_pdf" />
+
+
+        </RelativeLayout>
+
+
+        <!--for pin-->
+
+        <LinearLayout
+
+            android:id="@+id/pin_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/prentlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/background_color">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/logo_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:src="@drawable/logo" />
+
+
+                        <ImageView
+                            android:id="@+id/cross_img_for_pin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:onClick="onClickQus"
+                            android:src="@drawable/cross_ic" />
+
+
+                        <TextView
+                            android:id="@+id/txt_heading"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/logo_for_pin"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:text="@string/open_pin_txt"
+                            android:textSize="@dimen/_18sdp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/pin_txt"
+                            style="@style/bio_header"
+                            android:layout_below="@+id/txt_heading"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/open_pin_purpose"
+                            android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pin_txt"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_80sdp">
+
+                    <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                        android:id="@+id/txt_pin_entry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:digits="0123456789"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_horizontal"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberPassword"
+                        android:maxWidth="@dimen/_20sdp"
+                        android:maxLength="4"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/pin_text_color"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+
+                    <!--  <com.advantal.onebrush.dentis_dash__board_pkg.pin_generate_pkg.PinEntryEditText
+                          android:id="@+id/txt_pin_entry"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:background="@null"
+                          android:cursorVisible="true"
+                          android:digits="0123456789"
+                          android:focusable="true"
+                          android:focusableInTouchMode="true"
+                          android:gravity="center_horizontal"
+                          android:imeOptions="actionDone"
+                          android:inputType="numberPassword"
+                          android:maxWidth="@dimen/_20sdp"
+                          android:maxLength="4"
+                          android:padding="@dimen/_10sdp"
+                          android:textColor="@color/pin_text_color"
+                          android:textIsSelectable="false"
+                          android:textSize="20sp" />-->
+                    <!--  -->
+                </LinearLayout>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    style="@style/LoginButtonStyle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/next_button_shape"
+                    android:onClick="onClickQus"
+                    android:text="@string/go_to_login"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>   <!--End Pin-->
+
+
+        <RelativeLayout
+            android:id="@+id/bio_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:gravity="center|start|top"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center|start|top">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:src="@drawable/logo" />
+
+
+                    <ImageView
+                        android:id="@+id/cross_img_bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:onClick="onClickQus"
+                        android:src="@drawable/cross_ic" />
+
+
+                    <TextView
+                        android:id="@+id/txt_heading_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/logo"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/let_the_system_scan_your_biometrics"
+                        android:textSize="@dimen/_18sdp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/pin_txt_bio"
+                        style="@style/bio_header"
+                        android:layout_below="@+id/txt_heading_bio"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/domstric"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_below="@+id/pin_txt_bio"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:src="@drawable/touch_id" />
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/no_unlock_tx"
+                style="@style/bio_header"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/also_ur"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

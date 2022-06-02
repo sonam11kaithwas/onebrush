@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280px"
+        android:layout_height="70px"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/logo"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/steagalmedium"
+            android:gravity="center"
+            android:text="Welcome Dear patient!"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/steagalmedium"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:text="ust a few hints before we start. By going through the following dialogue, you will receive your first dental diagnosis via app.  All our diagnoses are written by real dentists with a doctors license from Germany."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        &lt;!&ndash;    <ImageView&ndash;&gt;
+        &lt;!&ndash;        android:id="@+id/logo"&ndash;&gt;
+        &lt;!&ndash;        android:layout_width="280px"&ndash;&gt;
+        &lt;!&ndash;        android:layout_height="70px"&ndash;&gt;
+        &lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;
+        &lt;!&ndash;        android:layout_centerInParent="true"&ndash;&gt;
+        &lt;!&ndash;        android:layout_marginTop="10dp"&ndash;&gt;
+        &lt;!&ndash;        android:background="@drawable/logo"&ndash;&gt;
+        &lt;!&ndash;        android:visibility="invisible" />&ndash;&gt;
+
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:fitsSystemWindows="true"
+            android:gravity="center">
+            &lt;!&ndash; android:layout_below="@+id/logo"&ndash;&gt;
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_heading"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/steagalmedium"
+                android:gravity="center"
+                android:text="Welcome Dear patient!"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txt_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/steagalmedium"
+                android:gravity="center"
+                android:text="ust a few hints before we start. By going through the following dialogue, you will receive your first dental diagnosis via app.  All our diagnoses are written by real dentists with a doctors license from Germany."
+                android:textColor="@color/midnight"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="NEXT"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </RelativeLayout>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:id="@+id/layout_parent"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/background_color">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/layout_for_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_20sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_20sdp"-->
+    <!--        android:background="@color/background_color"-->
+    <!--        android:visibility="visible">-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/rlayout_img"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_above="@id/layout_linear"-->
+    <!--            android:layout_marginBottom="@dimen/_10sdp"-->
+    <!--            android:adjustViewBounds="true"-->
+    <!--            android:scaleType="fitXY">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:scaleType="fitXY" />-->
+
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/layout_linear"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_above="@id/txt_details"-->
+    <!--            android:layout_marginLeft="@dimen/_20sdp"-->
+    <!--            android:layout_marginTop="@dimen/_5sdp"-->
+    <!--            android:layout_marginRight="@dimen/_20sdp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/txt_heading"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/steagalmedium"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text=""-->
+    <!--                android:textAllCaps="false"-->
+    <!--                android:textColor="#000000"-->
+    <!--                android:textSize="@dimen/_13sdp"-->
+    <!--                android:textStyle="normal" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/txt_details"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginLeft="@dimen/_20sdp"-->
+    <!--            android:layout_marginTop="@dimen/_10sdp"-->
+    <!--            android:layout_marginRight="@dimen/_20sdp"-->
+    <!--            android:fontFamily="@font/steagalmedium"-->
+    <!--            android:gravity="center"-->
+    <!--            android:onClick="onClickEvent"-->
+    <!--            android:scrollbars="horizontal"-->
+    <!--            android:text=""-->
+    <!--            android:textColor="@color/midnight"-->
+    <!--            android:textSize="@dimen/_11sdp"-->
+    <!--            android:textStyle="normal" />-->
+
+    <!--    </RelativeLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+
+
+
+

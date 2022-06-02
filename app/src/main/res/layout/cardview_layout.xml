@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view"
+            style="@style/myCardView">
+
+            <LinearLayout
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img"
+                    style="@style/card_imgView"
+                    android:src="@drawable/card_img1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/indicator_lables"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/remote_diagnosis_only"
+
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_click"
+            android:visibility="gone"
+            style="@style/myCardViewForClickable">
+
+            <LinearLayout
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/card_imgView"
+                    android:src="@drawable/card_img1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/indicator_lables"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/remote_diagnosis_only"
+
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view2"
+            style="@style/myCardView"
+            android:layout_below="@id/card_view">
+
+            <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/card_imgView"
+                    android:src="@drawable/card_img2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/indicator_lables"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/remote_diagnosis_toothbrush_connection" />
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/bio_sub_header"
+        android:layout_below="@id/rlayout"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/so_how_do_you_want_to_use_this_app_don_t_worry_you_can_change_your_decision_later" />
+</RelativeLayout>

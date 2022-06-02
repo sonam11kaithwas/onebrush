@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_bg"
+            android:text="@string/male"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#33000000" />
+
+        <RadioButton
+            android:id="@+id/radio_btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_bg"
+            android:text="@string/female"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#33000000" />
+
+        <RadioButton
+            android:id="@+id/radio_btn3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:button="@null"
+            android:drawableRight="@drawable/radio_bg"
+            android:text="@string/other"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/_13sdp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="#33000000" />
+
+        <!--  <RadioButton
+              android:id="@+id/kb4"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:button="@null"
+              android:drawableRight="@android:drawable/btn_radio"
+              android:text="Physical keyboard" />
+
+          <View
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="#33000000" />
+  -->
+    </RadioGroup>
+
+    <!--        <TextView
+                android:id="@+id/tv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/steagalmedium"
+                android:text="@string/male"
+                android:textColor="@color/midnight"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:checkedButton="1"
+              >
+
+                <RadioButton
+                    android:id="@+id/radio_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/royal"
+                    android:minWidth="0dp"
+                    android:onClick="onClickRadio"
+                    android:minHeight="0dp"
+                   />
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_male"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/background_color" />
+
+            <TextView
+                android:id="@+id/tv_femele"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/steagalmedium"
+                android:text="@string/femele"
+                android:textColor="@color/midnight"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:checkedButton="1"
+           >
+
+                <RadioButton
+                    android:id="@+id/radio_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/royal"
+                    android:minWidth="0dp"
+                    android:onClick="onClickRadio"
+
+                    android:minHeight="0dp"
+
+               />
+            </RadioGroup>
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_femele"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/background_color" />
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_margin="@dimen/_20sdp"
+                android:fontFamily="@font/steagalmedium"
+                android:text="@string/other"
+                android:textColor="@color/midnight"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:checkedButton="1"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/royal"
+                    android:minWidth="0dp"
+                    android:onClick="onClickRadio"
+
+                    android:minHeight="0dp"
+                    />
+            </RadioGroup>-->
+
+
+</RelativeLayout>

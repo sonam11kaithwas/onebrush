@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_img1"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.Avatar" />
+
+    <LinearLayout
+        android:id="@+id/multipleImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dot_layout"
+        android:layout_below="@id/patient_detail"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_profile_Pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.Avatar"
+            app:srcCompat="@drawable/ic_img" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_profilePic_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_detail"
+        android:layout_gravity="end"
+        android:layout_marginStart="0dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_del"
+        android:scaleType="fitEnd"
+        android:visibility="visible" />
+
+
+</LinearLayout>

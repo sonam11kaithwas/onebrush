@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/exit" />
+
+    <TextView
+        android:id="@+id/tv_logout_header"
+        style="@style/login_header"
+        android:text="@string/are_you_sure_you_want_to_log_out" />
+
+    <TextView
+        style="@style/bottom_textview"
+        android:layout_below="@id/tv_logout_header"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/you_will_lose_all" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_logout"
+        style="@style/logoutButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:onClick="onClickSettings"
+        android:text="@string/log_out"
+        android:textColor="@color/BrickRed" />
+
+    <TextView
+        android:id="@+id/tv_cencle"
+        style="@style/bottom_textview"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:textAllCaps="true"
+        android:text="@string/cancel" />
+
+</LinearLayout>
